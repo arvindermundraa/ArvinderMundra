@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+tmp/
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
