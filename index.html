@@ -57,7 +57,7 @@
             <div class="hero-content">
                 <span class="hero-subtitle">Hello, I'm</span>
                 <h1 class="hero-title">Arvinder <span class="text-gradient">Mundra</span></h1>
-                <h2 class="hero-roles">Software Engineer</h2>
+                <h2 class="hero-roles"><span id="typed-role">Software Engineer</span><span class="typing-cursor"></span></h2>
                 <div class="seeking-badge">
                     <i class="fa-solid fa-briefcase"></i>
                     <span>Actively Seeking: <strong>Summer 2026 Internships & Fall 2026 Co-ops</strong></span>
@@ -124,21 +124,38 @@
                     <div class="about-highlight-card">
                         <i class="fa-solid fa-code"></i>
                         <h3>Full-Stack Engineering</h3>
-                        <p>Proven background building scalable REST APIs, optimizing relational databases, and
-                            architecting modern frontends.</p>
+                        <p>Scalable REST APIs, Spring Boot backends, Angular/React frontends, and high-concurrency database architectures.</p>
                     </div>
                     <div class="about-highlight-card">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <h3>Data & AI Solutions</h3>
-                        <p>Transforming complex datasets into automated workflows, deploying deep learning models, and
-                            leading real-time KPI pipelines.</p>
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>Systems & DevOps</h3>
+                        <p>Microservices, distributed systems, Docker, Kubernetes, Jenkins CI/CD, and SLI/SLO observability.</p>
                     </div>
                     <div class="about-highlight-card">
                         <i class="fa-solid fa-cloud"></i>
-                        <h3>Cloud Infrastructure</h3>
-                        <p>Expertise in migrating services and ensuring high reliability using GCP, Azure, and modern
-                            container deployments.</p>
+                        <h3>Cloud & Data</h3>
+                        <p>GCP migrations, automated ETL pipelines, ML model deployment, and real-time analytics at scale.</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Stat Counters -->
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2" data-suffix="+">0</span>
+                    <span class="stat-label">Years Industry<br>Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50" data-suffix="K+">0</span>
+                    <span class="stat-label">Daily Requests<br>Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="40" data-suffix="%">0</span>
+                    <span class="stat-label">DB Latency<br>Reduced</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="400" data-suffix="+">0</span>
+                    <span class="stat-label">Learners<br>Mentored</span>
                 </div>
             </div>
         </div>
@@ -156,7 +173,7 @@
                             <h3 class="timeline-title">Master's degree, Data Science</h3>
                             <p class="timeline-subtitle">Texas A&M University (College Station, TX)</p>
                         </div>
-                        <span class="timeline-date">Aug 2025 - May 2027</span>
+                        <span class="timeline-date">Aug 2025 – Dec 2026</span>
                     </div>
                     <div class="timeline-body">
                         <p style="margin-bottom: 0.5rem;"><strong>GPA:</strong> 4.0/4.0</p>
@@ -223,30 +240,11 @@
                         <h3 class="timeline-title">Software Engineer</h3>
                         <h4 class="timeline-subtitle">Dun & Bradstreet</h4>
                         <ul class="timeline-list">
-                            <li>Enhanced the backend infrastructure of the Customer Data Platform (CDP) by utilizing
-                                Java,
-                                Spring Framework, Hibernate, and MySQL resulting in improved system responsiveness and
-                                better scalability under high-load scenarios.</li>
-                            <li>Created and integrated Service Level Indicators (SLIs) within Spring Boot microservices
-                                to
-                                enable real-time performance monitoring and trigger automated alerts, effectively
-                                minimizing
-                                downtime.</li>
-                            <li>Led the migration of core systems to Google Cloud Platform (GCP), including the
-                                transition
-                                of legacy authentication logic to MSV login flow, improving integration and reliability
-                                across services.</li>
-                            <li>Built and implemented custom dashboards to surface critical error patterns, enabling
-                                automated alerting and significantly speeding up detection and resolution of recurring
-                                issues.</li>
-                            <li>Initiated functional upgrades to internal modules such as SPCA (Subscriber Provisioning
-                                Contract Admin) and Finance Analytics, which enhanced system usability and user
-                                satisfaction.</li>
-                            <li>Conducted in-depth analysis of financial datasets to support the refinement of credit
-                                scoring algorithms, thereby improving predictive accuracy for risk profiling.</li>
-                            <li>Worked collaboratively with product owners, architects, and QA teams to deliver
-                                scalable,
-                                production-ready code aligned with evolving business goals and technical roadmaps.</li>
+                            <li>Architected scalable backend infrastructure for the <strong>Customer Data Platform (CDP)</strong> using <strong>Java, Spring Boot, and Hibernate</strong>, reducing database query latency by <strong>40%</strong> and supporting <strong>50,000+</strong> daily operational requests.</li>
+                            <li>Led migration of legacy authentication microservices to <strong>GCP</strong>, implementing a modern MSV login flow that improved cross-service reliability and reduced login latency by <strong>25%</strong>.</li>
+                            <li>Designed and integrated <strong>SLI/SLO tracking</strong> within Spring Boot microservices, hooking into cloud monitoring to auto-trigger dynamic incident alerts and reduce MTTR by <strong>30%</strong>.</li>
+                            <li>Optimized backend data pipelines and high-concurrency <strong>MySQL</strong> databases for the Finance Analytics platform, ensuring continuous uptime and reliable data access for financial data streams.</li>
+                            <li>Collaborated with product owners, architects, and QA teams to ship production-ready solutions using <strong>Docker, Kubernetes, and Jenkins</strong> CI/CD pipelines aligned with technical roadmaps.</li>
                         </ul>
                     </div>
                 </div>
@@ -255,19 +253,12 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">March 2023 - April 2023</span>
-                        <h3 class="timeline-title">Business Intelligence Intern</h3>
+                        <h3 class="timeline-title">Software Engineering Intern</h3>
                         <h4 class="timeline-subtitle">Call Health Services Pvt. Ltd.</h4>
                         <ul class="timeline-list">
-                            <li>Conducted RFM (Recency, Frequency, Monetary) analysis and customer retention modeling
-                                using Python and Advanced Excel, identifying high-value customer segments to support
-                                data-driven marketing and revenue optimization strategies.</li>
-                            <li>Developed interactive Power BI dashboards by integrating and transforming SQL-based
-                                datasets, enabling real-time KPI tracking, trend analysis, and executive-level reporting
-                                to improve operational decision-making.</li>
-                            <li>Automated data ingestion pipelines using RESTful APIs and applied MedSpaCy NLP
-                                techniques for clinical named entity recognition, improving structured data extraction,
-                                reducing manual processing time, and enhancing analytics readiness for healthcare
-                                datasets.</li>
+                            <li>Engineered automated backend ingestion modules using <strong>Python</strong> and <strong>RESTful APIs</strong>, converting raw healthcare data into structured formats and reducing manual data entry time by over <strong>15 hours weekly</strong>.</li>
+                            <li>Integrated <strong>NLP</strong> logic as a backend microservice using <strong>MedSpaCy</strong> to parse clinical entity data, extending the database schema with structured, analytics-ready features.</li>
+                            <li>Developed interactive <strong>Power BI</strong> dashboards by integrating SQL-based datasets, enabling real-time KPI tracking and executive-level reporting to improve operational decision-making.</li>
                         </ul>
                     </div>
                 </div>
@@ -276,20 +267,12 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">July 2021 - March 2022</span>
-                        <h3 class="timeline-title">Executive Lead, AI-ML Team</h3>
+                        <h3 class="timeline-title">Executive Lead, Data Pipelines</h3>
                         <h4 class="timeline-subtitle">My Equation</h4>
                         <ul class="timeline-list">
-                            <li>Led end-to-end development and deployment of AI/ML solutions for STEM-focused
-                                applications, designing batch and real-time algorithms with structured workflows for
-                                data preprocessing, model training, validation, A/B testing, and performance monitoring,
-                                improving model accuracy and production reliability.</li>
-                            <li>Built scalable data pipelines and ML frameworks using Python, TensorFlow, and Django,
-                                streamlining dataset preparation and deployment processes while optimizing system
-                                performance through automated testing and monitoring.</li>
-                            <li>Directed cross-functional coordination across 13+ technical tracks and delivered applied
-                                training on regression modeling, neural networks, object detection (YOLOv5), and NLP
-                                techniques (BERT), translating complex analytical concepts into practical
-                                implementations and driving engagement across 1,200+ learners.</li>
+                            <li>Architected scalable data infrastructures managing asynchronous traffic for <strong>13+ technical learning tracks</strong>, leveraging <strong>Python</strong> to clean, structure, and route datasets for downstream statistical modeling.</li>
+                            <li>Automated batch processing pipelines via <strong>cron jobs</strong> and unit testing protocols, maintaining <strong>99% data integrity</strong> across production endpoints and reducing data processing overhead.</li>
+                            <li>Drove cross-functional technical coordination and delivered applied ML/AI training sessions, accelerating engagement across <strong>1,200+ learners</strong>.</li>
                         </ul>
                     </div>
                 </div>
@@ -324,16 +307,70 @@
                     <span>Programming & Scripting</span>
                 </div>
                 <div class="expertise-tags">
-                    <span class="expertise-tag">Python</span>
                     <span class="expertise-tag">Java</span>
+                    <span class="expertise-tag">Python</span>
                     <span class="expertise-tag">SQL</span>
                     <span class="expertise-tag">C++</span>
-                    <span class="expertise-tag">C</span>
                     <span class="expertise-tag">JavaScript</span>
+                    <span class="expertise-tag">TypeScript</span>
                     <span class="expertise-tag">Shell Scripting</span>
                     <span class="expertise-tag">R</span>
                     <span class="expertise-tag">HTML</span>
                     <span class="expertise-tag">CSS</span>
+                </div>
+            </div>
+
+            <div class="expertise-row">
+                <div class="expertise-category">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Frameworks & Libraries</span>
+                </div>
+                <div class="expertise-tags">
+                    <span class="expertise-tag">Spring Boot</span>
+                    <span class="expertise-tag">Hibernate</span>
+                    <span class="expertise-tag">Angular</span>
+                    <span class="expertise-tag">React</span>
+                    <span class="expertise-tag">Node.js</span>
+                    <span class="expertise-tag">gRPC</span>
+                    <span class="expertise-tag">REST APIs</span>
+                    <span class="expertise-tag">NumPy</span>
+                    <span class="expertise-tag">Scikit-Learn</span>
+                    <span class="expertise-tag">PyTorch</span>
+                    <span class="expertise-tag">TensorFlow</span>
+                </div>
+            </div>
+
+            <div class="expertise-row">
+                <div class="expertise-category">
+                    <i class="fa-solid fa-sitemap"></i>
+                    <span>Systems & Architecture</span>
+                </div>
+                <div class="expertise-tags">
+                    <span class="expertise-tag">Microservices</span>
+                    <span class="expertise-tag">Distributed Systems</span>
+                    <span class="expertise-tag">System Design</span>
+                    <span class="expertise-tag">Concurrency</span>
+                    <span class="expertise-tag">Scalability</span>
+                    <span class="expertise-tag">Fault Tolerance</span>
+                    <span class="expertise-tag">Caching</span>
+                    <span class="expertise-tag">Load Balancing</span>
+                </div>
+            </div>
+
+            <div class="expertise-row">
+                <div class="expertise-category">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>DevOps & Tools</span>
+                </div>
+                <div class="expertise-tags">
+                    <span class="expertise-tag">Docker</span>
+                    <span class="expertise-tag">Kubernetes</span>
+                    <span class="expertise-tag">Jenkins</span>
+                    <span class="expertise-tag">GitHub</span>
+                    <span class="expertise-tag">Postman</span>
+                    <span class="expertise-tag">Linux/Unix</span>
+                    <span class="expertise-tag">Power BI</span>
+                    <span class="expertise-tag">Jupyter</span>
                 </div>
             </div>
 
@@ -349,42 +386,7 @@
                     <span class="expertise-tag">Data Pipelines</span>
                     <span class="expertise-tag">Data Visualization</span>
                     <span class="expertise-tag">EDA</span>
-                    <span class="expertise-tag">Data Modeling</span>
-                    <span class="expertise-tag">Analytical Thinking</span>
-                </div>
-            </div>
-
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <span>Tools & Platforms</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Power BI</span>
-                    <span class="expertise-tag">GitHub</span>
-                    <span class="expertise-tag">Postman</span>
-                    <span class="expertise-tag">Eclipse</span>
-                    <span class="expertise-tag">Jupyter</span>
-                    <span class="expertise-tag">RStudio</span>
-                    <span class="expertise-tag">Google Colab</span>
-                    <span class="expertise-tag">OpenAI</span>
-                    <span class="expertise-tag">Excel</span>
-                </div>
-            </div>
-
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <span>Libraries/Frameworks</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Spring Boot</span>
-                    <span class="expertise-tag">React</span>
-                    <span class="expertise-tag">Angular</span>
-                    <span class="expertise-tag">NumPy</span>
-                    <span class="expertise-tag">Scikit-Learn</span>
-                    <span class="expertise-tag">PyTorch</span>
-                    <span class="expertise-tag">TensorFlow</span>
+                    <span class="expertise-tag">SLI/SLO Monitoring</span>
                 </div>
             </div>
 
@@ -399,7 +401,9 @@
                     <span class="expertise-tag">Azure</span>
                     <span class="expertise-tag">MySQL</span>
                     <span class="expertise-tag">PostgreSQL</span>
+                    <span class="expertise-tag">MS SQL Server</span>
                     <span class="expertise-tag">MongoDB</span>
+                    <span class="expertise-tag">Redis</span>
                     <span class="expertise-tag">Oracle SQL</span>
                 </div>
             </div>
@@ -440,6 +444,8 @@
                     <span>Angular</span>
                     <span>Spring Boot</span>
                     <span>Java</span>
+                    <span>Spring Security</span>
+                    <span>JWT</span>
                     <span>PostgreSQL</span>
                     <span>REST APIs</span>
                 </div>
@@ -464,9 +470,7 @@
                         </li>
                         <li><strong>Automated ETL Pipelines:</strong> Architected custom stored procedures and smart
                             triggers for automated real-time inventory updates and automated business reporting.</li>
-                        <li><strong>Performance Impact:</strong> Successfully reduced data synchronization effort by
-                            over <strong>80%</strong>, drastically improving operational efficiency and providing
-                            hyper-reliable analytical insights.</li>
+                        <li><strong>Performance Impact:</strong> Accelerated real-time inventory synchronization and dropped transactional bottlenecks by <strong>80%</strong>, dramatically improving operational efficiency and analytical reliability.</li>
                     </ul>
                 </div>
                 <div class="project-tech">
@@ -577,9 +581,12 @@
                 <a href="https://github.com/arvindermundra" target="_blank" aria-label="GitHub"><i
                         class="fa-brands fa-github"></i></a>
             </div>
-            <p class="copyright">&copy; 2024 Arvinder Mundra. Designed & Built for Performance.</p>
+            <p class="copyright">&copy; 2026 Arvinder Mundra. Designed & Built for Performance.</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <!-- Scripts -->
     <script src="script.js"></script>
