@@ -1,149 +1,85 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Navbar scroll + scroll-to-top visibility
-    const navbar = document.querySelector('.navbar');
-    const scrollTopBtn = document.querySelector('.scroll-top');
+    /* ── Nav: sticky + mobile ─────────────────── */
+    const nav    = document.getElementById('nav');
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-        if (scrollTopBtn) {
-            scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-        }
-    });
+        nav.classList.toggle('stuck', window.scrollY > 40);
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
+    }, { passive: true });
 
-    // Scroll to top
-    if (scrollTopBtn) {
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    }
-
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const spans = menuToggle.querySelectorAll('span');
-            if (navLinks.classList.contains('active')) {
-                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                spans[1].style.opacity = '0';
-                spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            const open = links.classList.toggle('open');
+            const spans = toggle.querySelectorAll('span');
+            if (open) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+                spans[1].style.opacity   = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
             } else {
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
+                spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
             }
         });
-    }
 
-    // Close mobile menu on link click
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            if (navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-                const spans = menuToggle.querySelectorAll('span');
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            }
-        });
-    });
-
-    // Scroll-triggered fade-in animations
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('appear');
-            observer.unobserve(entry.target);
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-    faders.forEach(fader => appearOnScroll.observe(fader));
-
-    // Active nav link highlighting
-    const sections = document.querySelectorAll('section');
-    const navItems = document.querySelectorAll('.nav-links a');
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            if (window.scrollY >= section.offsetTop - 200) {
-                current = section.getAttribute('id');
-            }
-        });
-        navItems.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    });
-
-    // Typing animation
-    const roles = ['Software Engineer', 'Full-Stack Developer', 'Data Scientist'];
-    const typedEl = document.getElementById('typed-role');
-    if (typedEl) {
-        let roleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-
-        function type() {
-            const current = roles[roleIndex];
-            typedEl.textContent = isDeleting
-                ? current.slice(0, charIndex - 1)
-                : current.slice(0, charIndex + 1);
-
-            isDeleting ? charIndex-- : charIndex++;
-
-            let delay = isDeleting ? 60 : 100;
-
-            if (!isDeleting && charIndex === current.length) {
-                delay = 2200;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                roleIndex = (roleIndex + 1) % roles.length;
-                delay = 400;
-            }
-            setTimeout(type, delay);
-        }
-        setTimeout(type, 1200);
-    }
-
-    // Animated stat counters
-    const statNumbers = document.querySelectorAll('.stat-number');
-    if (statNumbers.length) {
-        const counterObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                const el = entry.target;
-                const target = +el.dataset.target;
-                const suffix = el.dataset.suffix || '';
-                const duration = 1800;
-                const stepTime = 16;
-                const steps = duration / stepTime;
-                const increment = target / steps;
-                let current = 0;
-
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        el.textContent = target + suffix;
-                        clearInterval(timer);
-                    } else {
-                        el.textContent = Math.floor(current) + suffix;
-                    }
-                }, stepTime);
-
-                observer.unobserve(el);
+        links.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                links.classList.remove('open');
+                toggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
             });
-        }, { threshold: 0.5 });
+        });
+    }
 
-        statNumbers.forEach(n => counterObserver.observe(n));
+    /* ── Active nav link ──────────────────────── */
+    const sections = document.querySelectorAll('section[id]');
+    const navAs    = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let cur = '';
+        sections.forEach(s => {
+            if (window.scrollY >= s.offsetTop - 160) cur = s.id;
+        });
+        navAs.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === `#${cur}`);
+        });
+    }, { passive: true });
+
+    /* ── Scroll-to-top ────────────────────────── */
+    const scrollTopBtn = document.querySelector('.scroll-top');
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    /* ── Scroll-in animations ─────────────────── */
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('in');
+                io.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('[data-animate], [data-animate-delay]').forEach(el => io.observe(el));
+
+    /* ── Typing animation ─────────────────────── */
+    const roles   = ['Software Engineer', 'Full-Stack Developer', 'Data Scientist', 'Backend Engineer'];
+    const typed   = document.getElementById('typed-role');
+
+    if (typed) {
+        let ri = 0, ci = 0, deleting = false;
+
+        const tick = () => {
+            const word = roles[ri];
+            typed.textContent = deleting ? word.slice(0, ci - 1) : word.slice(0, ci + 1);
+            deleting ? ci-- : ci++;
+
+            let delay = deleting ? 55 : 95;
+            if (!deleting && ci === word.length)   { delay = 2200; deleting = true; }
+            else if (deleting && ci === 0)         { deleting = false; ri = (ri + 1) % roles.length; delay = 380; }
+            setTimeout(tick, delay);
+        };
+        setTimeout(tick, 1000);
     }
 });

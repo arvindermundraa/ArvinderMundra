@@ -1,684 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arvinder Mundra | Data Scientist & Software Engineer</title>
-    <meta name="description"
-        content="Portfolio of Arvinder Mundra, a Data Science graduate student and Software Engineer specializing in data analytics, scalable pipelines, and machine learning.">
-
-    <!-- Google Fonts -->
+    <title>Arvinder Mundra — Software Engineer</title>
+    <meta name="description" content="Arvinder Mundra — Software Engineer, MS Data Science @ Texas A&M. 2 years at Dun & Bradstreet. Open to SWE internships & full-time roles.">
+    <meta property="og:title" content="Arvinder Mundra — Software Engineer">
+    <meta property="og:description" content="MS Data Science @ Texas A&M (4.0 GPA). 2 years building backend systems at Dun & Bradstreet. Open to SWE roles.">
+    <meta property="og:url" content="https://arvindermundraa.github.io/ArvinderMundra/">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Dynamic Background Elements -->
-    <div class="glow-orb orb-1"></div>
-    <div class="glow-orb orb-2"></div>
-    <div class="glow-orb orb-3"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="#hero">AM.</a>
-            </div>
-            <div class="menu-toggle" aria-label="Toggle Navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- ── Nav ──────────────────────────────────────── -->
+<nav class="nav" id="nav">
+    <div class="container nav-inner">
+        <a href="#hero" class="nav-logo">AM.</a>
+        <button class="nav-toggle" aria-label="menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero container fade-in">
-        <div class="hero-grid">
-            <div class="hero-content">
-                <span class="hero-subtitle">Hello, I'm</span>
-                <h1 class="hero-title">Arvinder <span class="text-gradient">Mundra</span></h1>
-                <h2 class="hero-roles"><span id="typed-role">Software Engineer</span><span class="typing-cursor"></span></h2>
-                <div class="seeking-badge">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <span>Actively Seeking: <strong>Summer 2026 Internships & Fall 2026 Co-ops</strong></span>
-                </div>
-                <div class="seeking-roles">
-                    <span>Data Science</span> • <span>Full-stack</span> • <span>Software Engineering</span>
-                </div>
-                <p class="hero-desc">
-                    I architect scalable application backends and engineer highly reliable, data-driven systems to drive
-                    measurable business growth. With deep expertise in Java, Spring Boot, Python, and cloud
-                    infrastructure, I build robust, intelligent user experiences.
-                </p>
-                <div class="hero-cta">
-                    <a href="Arvinder-Mundra-Resume.pdf" target="_blank" class="btn btn-primary" aria-label="View Resume">
-                        <i class="fa-solid fa-file-pdf"></i> View Resume
-                    </a>
-                    <a href="#contact" class="btn btn-outline" aria-label="Contact Me">Contact Me</a>
-                    <a href="https://www.linkedin.com/in/arvinder-mundraa" target="_blank" class="btn btn-social"
-                        aria-label="LinkedIn Profile">
+<!-- ── Hero ─────────────────────────────────────── -->
+<section id="hero" class="hero">
+    <div class="container hero-inner">
+        <div class="hero-text" data-animate>
+            <div class="avail">
+                <span class="avail-dot"></span>
+                Open to SWE &nbsp;·&nbsp; Full-Stack &nbsp;·&nbsp; Data Science — Summer &amp; Fall 2026
+            </div>
+
+            <h1 class="hero-name">
+                Arvinder<br>
+                <span class="grad">Mundra.</span>
+            </h1>
+
+            <p class="hero-role">
+                <span id="typed-role">Software Engineer</span><span class="cursor"></span>
+            </p>
+
+            <p class="hero-bio">
+                MS Data Science @ Texas A&amp;M &mdash; GPA 4.0.<br>
+                2 years engineering scalable backend systems &amp; cloud infrastructure at <strong>Dun &amp; Bradstreet</strong>.
+            </p>
+
+            <div class="hero-actions">
+                <a href="Arvinder_MS_RESUME.pdf" target="_blank" class="btn-primary">
+                    <i class="fa-solid fa-file-pdf"></i> Resume
+                </a>
+                <a href="#contact" class="btn-ghost">Get In Touch</a>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/arvinder-mundraa" target="_blank" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                </div>
-                <div class="hero-tech-stack">
-                    <span class="tech-pill">Java</span>
-                    <span class="tech-pill">Spring Boot</span>
-                    <span class="tech-pill">Python</span>
-                    <span class="tech-pill">PyTorch</span>
-                    <span class="tech-pill">React</span>
-                    <span class="tech-pill">Docker</span>
-                    <span class="tech-pill">GCP</span>
-                    <span class="tech-pill">SQL</span>
-                </div>
-            </div>
-            <div class="hero-image-container">
-                <img src="assets/images/Edited_10-10Feb_12-16-55.jpg" alt="Arvinder Mundra" class="profile-img">
-                <div class="image-backdrop"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about fade-in">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        I am currently a <strong>Data Science graduate student</strong> at Texas A&M University, where I
-                        also serve as a Graduate Teaching Assistant. While my academic foundation is in advanced
-                        analytics, I am actively seeking exciting
-                        opportunities in <strong>Software Engineering</strong>, <strong>Full-Stack
-                            Development</strong>, and <strong>Data Science</strong>.
-                    </p>
-                    <p>
-                        My passion lies in constructing robust, end-to-end software architectures—from securing an API
-                        layer and optimizing backend databases to deploying highly scalable cloud microservices. I
-                        leverage my advanced academic background to build intelligent, highly reliable data-driven
-                        software solutions.
-                    </p>
-                    <p>
-                        Professionally, I thrive on solving complex system bottlenecks and engineering distributed
-                        systems. During my tenure as a Software Engineer at Dun & Bradstreet, I tackled critical backend
-                        issues in Java and Spring Boot, led core system migrations to the Google Cloud Platform (GCP),
-                        and implemented functional enhancements to directly improve platform reporting and efficiency.
-                    </p>
-                    <p>
-                        Previously, at My Equation, I directed the roll-out of full-stack products utilizing Python and
-                        Django, handling everything from scalable database architectures to establishing robust RESTful
-                        backend pipelines. I am constantly eager to tackle complex engineering challenges and build the
-                        next generation of scalable software.
-                    </p>
-                </div>
-                <div class="about-highlights">
-                    <div class="about-highlight-card">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Full-Stack Engineering</h3>
-                        <p>Scalable REST APIs, Spring Boot backends, Angular/React frontends, and high-concurrency database architectures.</p>
-                    </div>
-                    <div class="about-highlight-card">
-                        <i class="fa-solid fa-gears"></i>
-                        <h3>Systems & DevOps</h3>
-                        <p>Microservices, distributed systems, Docker, Kubernetes, Jenkins CI/CD, and SLI/SLO observability.</p>
-                    </div>
-                    <div class="about-highlight-card">
-                        <i class="fa-solid fa-cloud"></i>
-                        <h3>Cloud & Data</h3>
-                        <p>GCP migrations, automated ETL pipelines, ML model deployment, and real-time analytics at scale.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stat Counters -->
-            <div class="stats-row">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="2" data-suffix="+">0</span>
-                    <span class="stat-label">Years Industry<br>Experience</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="50" data-suffix="K+">0</span>
-                    <span class="stat-label">Daily Requests<br>Served</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="40" data-suffix="%">0</span>
-                    <span class="stat-label">DB Latency<br>Reduced</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="400" data-suffix="+">0</span>
-                    <span class="stat-label">Learners<br>Mentored</span>
+                    <a href="https://github.com/arvindermundra1208" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="timeline-section container fade-in">
-    <h2 class="section-title">Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3 class="timeline-title">Master's degree, Data Science</h3>
-                            <p class="timeline-subtitle">Texas A&M University (College Station, TX)</p>
-                        </div>
-                        <span class="timeline-date">Aug 2025 – Dec 2026</span>
-                    </div>
-                    <div class="timeline-body">
-                        <p style="margin-bottom: 0.5rem;"><strong>GPA:</strong> 4.0/4.0</p>
-                        <p><strong>Fall 2025:</strong></p>
-                        <ul style="margin-bottom: 1rem;">
-                            <li>ECEN 758 &ndash; DS: Data Mining and Analysis</li>
-                            <li>MATH 677 &ndash; Math Foundations for Data Science</li>
-                            <li>STAT 624 &ndash; Database & Computational Tools for Big Data</li>
-                            <li>STAT 650 &ndash; Statistical Foundations of Data Science</li>
-                        </ul>
-                        <p><strong>Spring 2026:</strong></p>
-                        <ul>
-                            <li>CSCE 625 &mdash; Artificial Intelligence</li>
-                            <li>STAT 654 &mdash; Statistical Computing with R & Python</li>
-                            <li>STAT 656 &mdash; Applied Analytics</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div>
-                            <h3 class="timeline-title">Bachelor of Technology, Electronics & Computer Engineering</h3>
-                            <p class="timeline-subtitle">SRM Institute of Science and Technology (Chennai, India)</p>
-                        </div>
-                        <span class="timeline-date">Jun 2019 - May 2023</span>
-                    </div>
-                    <div class="timeline-body">
-                        <p><strong>GPA:</strong> 3.7/4.0</p>
-                    </div>
-                </div>
+        <div class="hero-visual" data-animate-delay>
+            <div class="img-wrap">
+                <img src="assets/images/Edited_10-10Feb_12-16-55.jpg" alt="Arvinder Mundra">
             </div>
         </div>
-    </section>
+    </div>
+    <span class="hero-watermark" aria-hidden="true">ENGINEER</span>
+</section>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="experience fade-in">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jan 2026 - Present</span>
-                        <h3 class="timeline-title">Graduate Teaching Assistant</h3>
-                        <h4 class="timeline-subtitle">Texas A&M University</h4>
-                        <ul class="timeline-list">
-                            <li>Supported instruction for <strong>STAT 650</strong> and <strong>STAT 302</strong>
-                                (Statistical Methods), leading weekly recitations and lab sessions for graduate and
-                                undergraduate students.</li>
-                            <li>Facilitated in-person and online office hours, providing technical guidance on
-                                statistical tools and Big Data computational foundations.</li>
-                        </ul>
-                    </div>
-                </div>
+<!-- ── Experience ───────────────────────────────── -->
+<section id="experience" class="section section-alt" data-animate>
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">August 2023 - July 2025</span>
-                        <h3 class="timeline-title">Software Engineer</h3>
-                        <h4 class="timeline-subtitle">Dun & Bradstreet</h4>
-                        <ul class="timeline-list">
-                            <li>Architected scalable backend infrastructure for the <strong>Customer Data Platform (CDP)</strong> using <strong>Java, Spring Boot, and Hibernate</strong>, reducing database query latency by <strong>40%</strong> and supporting <strong>50,000+</strong> daily operational requests.</li>
-                            <li>Led migration of legacy authentication microservices to <strong>GCP</strong>, implementing a modern MSV login flow that improved cross-service reliability and reduced login latency by <strong>25%</strong>.</li>
-                            <li>Designed and integrated <strong>SLI/SLO tracking</strong> within Spring Boot microservices, hooking into cloud monitoring to auto-trigger dynamic incident alerts and reduce MTTR by <strong>30%</strong>.</li>
-                            <li>Optimized backend data pipelines and high-concurrency <strong>MySQL</strong> databases for the Finance Analytics platform, ensuring continuous uptime and reliable data access for financial data streams.</li>
-                            <li>Collaborated with product owners, architects, and QA teams to ship production-ready solutions using <strong>Docker, Kubernetes, and Jenkins</strong> CI/CD pipelines aligned with technical roadmaps.</li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="exp-list">
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">March 2023 - April 2023</span>
-                        <h3 class="timeline-title">Software Engineering Intern</h3>
-                        <h4 class="timeline-subtitle">Call Health Services Pvt. Ltd.</h4>
-                        <ul class="timeline-list">
-                            <li>Engineered automated backend ingestion modules using <strong>Python</strong> and <strong>RESTful APIs</strong>, converting raw healthcare data into structured formats and reducing manual data entry time by over <strong>15 hours weekly</strong>.</li>
-                            <li>Integrated <strong>NLP</strong> logic as a backend microservice using <strong>MedSpaCy</strong> to parse clinical entity data, extending the database schema with structured, analytics-ready features.</li>
-                            <li>Developed interactive <strong>Power BI</strong> dashboards by integrating SQL-based datasets, enabling real-time KPI tracking and executive-level reporting to improve operational decision-making.</li>
-                        </ul>
+            <div class="exp-card" data-co="tamu">
+                <div class="exp-head">
+                    <div>
+                        <p class="exp-company">Texas A&amp;M University</p>
+                        <h3 class="exp-role">Graduate Teaching Assistant</h3>
                     </div>
+                    <span class="exp-date">Jan 2026 — Present</span>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">July 2021 - March 2022</span>
-                        <h3 class="timeline-title">Executive Lead, Data Pipelines</h3>
-                        <h4 class="timeline-subtitle">My Equation</h4>
-                        <ul class="timeline-list">
-                            <li>Architected scalable data infrastructures managing asynchronous traffic for <strong>13+ technical learning tracks</strong>, leveraging <strong>Python</strong> to clean, structure, and route datasets for downstream statistical modeling.</li>
-                            <li>Automated batch processing pipelines via <strong>cron jobs</strong> and unit testing protocols, maintaining <strong>99% data integrity</strong> across production endpoints and reducing data processing overhead.</li>
-                            <li>Drove cross-functional technical coordination and delivered applied ML/AI training sessions, accelerating engagement across <strong>1,200+ learners</strong>.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jun 2021 - Jul 2021</span>
-                        <h3 class="timeline-title">Intern</h3>
-                        <h4 class="timeline-subtitle">Amara Raja Group</h4>
-                        <ul class="timeline-list">
-                            <li>Contributed to the development of a UI design and database management system using
-                                Microsoft Visual Studio, SQL Server, HTML, and ASP.NET to streamline the storage and
-                                management of UPS battery installation data across multiple locations.</li>
-                            <li>Designed and implemented role-based access controls, along with validation checks for
-                                email formats, STD codes, and date restrictions, significantly improving the accuracy of
-                                data entry and enhancing the system’s security and access management.</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="bullets">
+                    <li>Lead weekly recitations and lab sessions for <strong>STAT 650</strong> and <strong>STAT 302</strong> (Statistical Methods) for graduate and undergraduate students.</li>
+                    <li>Run in-person and online office hours providing technical guidance on statistical tools and Big Data computational methods.</li>
+                </ul>
             </div>
+
+            <div class="exp-card" data-co="dnb">
+                <div class="exp-head">
+                    <div>
+                        <p class="exp-company">Dun &amp; Bradstreet</p>
+                        <h3 class="exp-role">Software Engineer</h3>
+                    </div>
+                    <span class="exp-date">Aug 2023 — Jul 2025</span>
+                </div>
+                <ul class="bullets">
+                    <li>Architected backend infrastructure for the Customer Data Platform using <strong>Java, Spring Boot &amp; Hibernate</strong> — reduced query latency by <strong>40%</strong>, supporting <strong>50,000+</strong> daily requests.</li>
+                    <li>Led migration of legacy auth microservices to <strong>GCP</strong>, implementing modern MSV login flow — cut login latency by <strong>25%</strong>.</li>
+                    <li>Designed <strong>SLI/SLO tracking</strong> within Spring Boot microservices with auto-triggered alerts — reduced MTTR by <strong>30%</strong>.</li>
+                    <li>Optimized high-concurrency <strong>MySQL</strong> pipelines for Finance Analytics and shipped production solutions via <strong>Docker, Kubernetes &amp; Jenkins</strong> CI/CD.</li>
+                </ul>
+            </div>
+
+            <div class="exp-card" data-co="callhealth">
+                <div class="exp-head">
+                    <div>
+                        <p class="exp-company">Call Health Services Pvt. Ltd.</p>
+                        <h3 class="exp-role">Software Engineering Intern</h3>
+                    </div>
+                    <span class="exp-date">Mar 2023 — Apr 2023</span>
+                </div>
+                <ul class="bullets">
+                    <li>Built automated backend ingestion modules in <strong>Python &amp; REST APIs</strong> — eliminated <strong>15+ hours/week</strong> of manual data entry.</li>
+                    <li>Integrated <strong>MedSpaCy NLP</strong> as a backend microservice for clinical entity parsing, extending the database with structured analytics-ready features.</li>
+                </ul>
+            </div>
+
+            <div class="exp-card" data-co="myeq">
+                <div class="exp-head">
+                    <div>
+                        <p class="exp-company">My Equation</p>
+                        <h3 class="exp-role">Executive Lead, Data Pipelines</h3>
+                    </div>
+                    <span class="exp-date">Jul 2021 — Mar 2022</span>
+                </div>
+                <ul class="bullets">
+                    <li>Architected data infrastructures managing async traffic for <strong>13+ learning tracks</strong> using Python — maintained <strong>99% data integrity</strong> across production endpoints.</li>
+                    <li>Automated batch processing via cron jobs and drove ML/AI training engagement across <strong>1,200+ learners</strong>.</li>
+                </ul>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills container fade-in">
-        <h2 class="section-title">Technical Expertise</h2>
-        <div class="skills-expertise-container">
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Programming & Scripting</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Java</span>
-                    <span class="expertise-tag">Python</span>
-                    <span class="expertise-tag">SQL</span>
-                    <span class="expertise-tag">C++</span>
-                    <span class="expertise-tag">JavaScript</span>
-                    <span class="expertise-tag">TypeScript</span>
-                    <span class="expertise-tag">Shell Scripting</span>
-                    <span class="expertise-tag">R</span>
-                    <span class="expertise-tag">HTML</span>
-                    <span class="expertise-tag">CSS</span>
-                </div>
-            </div>
+<!-- ── Projects ──────────────────────────────────── -->
+<section id="projects" class="section" data-animate>
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
 
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <span>Frameworks & Libraries</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Spring Boot</span>
-                    <span class="expertise-tag">Hibernate</span>
-                    <span class="expertise-tag">Angular</span>
-                    <span class="expertise-tag">React</span>
-                    <span class="expertise-tag">Node.js</span>
-                    <span class="expertise-tag">gRPC</span>
-                    <span class="expertise-tag">REST APIs</span>
-                    <span class="expertise-tag">NumPy</span>
-                    <span class="expertise-tag">Scikit-Learn</span>
-                    <span class="expertise-tag">PyTorch</span>
-                    <span class="expertise-tag">TensorFlow</span>
-                </div>
-            </div>
-
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-sitemap"></i>
-                    <span>Systems & Architecture</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Microservices</span>
-                    <span class="expertise-tag">Distributed Systems</span>
-                    <span class="expertise-tag">System Design</span>
-                    <span class="expertise-tag">Concurrency</span>
-                    <span class="expertise-tag">Scalability</span>
-                    <span class="expertise-tag">Fault Tolerance</span>
-                    <span class="expertise-tag">Caching</span>
-                    <span class="expertise-tag">Load Balancing</span>
-                </div>
-            </div>
-
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <span>DevOps & Tools</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Docker</span>
-                    <span class="expertise-tag">Kubernetes</span>
-                    <span class="expertise-tag">Jenkins</span>
-                    <span class="expertise-tag">GitHub</span>
-                    <span class="expertise-tag">Postman</span>
-                    <span class="expertise-tag">Linux/Unix</span>
-                    <span class="expertise-tag">Power BI</span>
-                    <span class="expertise-tag">Jupyter</span>
-                </div>
-            </div>
-
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    <span>Data & Analytics</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Machine Learning</span>
-                    <span class="expertise-tag">Statistical Modeling</span>
-                    <span class="expertise-tag">ETL</span>
-                    <span class="expertise-tag">Data Pipelines</span>
-                    <span class="expertise-tag">Data Visualization</span>
-                    <span class="expertise-tag">EDA</span>
-                    <span class="expertise-tag">SLI/SLO Monitoring</span>
-                </div>
-            </div>
-
-            <div class="expertise-row">
-                <div class="expertise-category">
-                    <i class="fa-solid fa-cloud"></i>
-                    <span>Cloud & Databases</span>
-                </div>
-                <div class="expertise-tags">
-                    <span class="expertise-tag">Google Cloud (GCP)</span>
-                    <span class="expertise-tag">AWS</span>
-                    <span class="expertise-tag">Azure</span>
-                    <span class="expertise-tag">MySQL</span>
-                    <span class="expertise-tag">PostgreSQL</span>
-                    <span class="expertise-tag">MS SQL Server</span>
-                    <span class="expertise-tag">MongoDB</span>
-                    <span class="expertise-tag">Redis</span>
-                    <span class="expertise-tag">Oracle SQL</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects container fade-in">
-        <h2 class="section-title">Featured Engineering Work</h2>
         <div class="projects-grid">
 
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fa-solid fa-building-columns project-icon"></i>
-                    <div class="project-links">
-                        <a href="https://github.com/arvindermundra" target="_blank" aria-label="GitHub Repository"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
+            <article class="proj-card">
+                <span class="proj-num" aria-hidden="true">01</span>
+                <div class="proj-top">
+                    <i class="fa-solid fa-building-columns proj-icon"></i>
+                    <a href="https://github.com/arvindermundra1208" target="_blank" class="proj-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <h3 class="project-title">Secure Interactive Banking Platform</h3>
-                <div class="project-details">
-                    <p class="project-description">A multi-tier financial application built with a focus on security,
-                        role-based access, and high-performance backend architecture.</p>
-                    <ul class="project-bullets">
-                        <li><strong>Scalable Architecture:</strong> Engineered a robust client-server system using
-                            <strong>Angular</strong> for the frontend and <strong>Java/Spring Boot</strong> on the
-                            backend, ensuring a seamless user experience.
-                        </li>
-                        <li><strong>Advanced Security:</strong> Integrated <strong>Spring Security</strong> with
-                            role-based access control (RBAC), implementing encrypted data transmission and session
-                            management to meet high financial privacy standards.</li>
-                        <li><strong>High-Concurrency Backend:</strong> Built and optimized multiple RESTful API
-                            endpoints, utilizing <strong>PostgreSQL</strong> for efficient data persistence and reliable
-                            transaction handling.</li>
-                    </ul>
+                <h3 class="proj-title">Secure Banking Platform</h3>
+                <p class="proj-desc">Multi-tier financial app with Angular frontend, Spring Boot backend, and enterprise security.</p>
+                <ul class="proj-bullets">
+                    <li><strong>RBAC Security:</strong> JWT + Spring Security with encrypted session management to meet financial compliance.</li>
+                    <li><strong>Scalable APIs:</strong> High-concurrency REST endpoints backed by PostgreSQL for reliable transaction handling.</li>
+                </ul>
+                <div class="proj-stack">
+                    <span>Angular</span><span>Spring Boot</span><span>Java</span><span>Spring Security</span><span>JWT</span><span>PostgreSQL</span>
                 </div>
-                <div class="project-tech">
-                    <span>Angular</span>
-                    <span>Spring Boot</span>
-                    <span>Java</span>
-                    <span>Spring Security</span>
-                    <span>JWT</span>
-                    <span>PostgreSQL</span>
-                    <span>REST APIs</span>
-                </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fa-solid fa-cart-shopping project-icon"></i>
-                    <div class="project-links">
-                        <a href="https://github.com/arvindermundra" target="_blank" aria-label="GitHub Repository"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
+            <article class="proj-card">
+                <span class="proj-num" aria-hidden="true">02</span>
+                <div class="proj-top">
+                    <i class="fa-solid fa-cart-shopping proj-icon"></i>
+                    <a href="https://github.com/arvindermundra1208" target="_blank" class="proj-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <h3 class="project-title">Enterprise Inventory & Backend System</h3>
-                <div class="project-details">
-                    <p class="project-description">A massive database redesign project targeting high-volume retail
-                        transactions and real-time inventory synchronization.</p>
-                    <ul class="project-bullets">
-                        <li><strong>Database Redesign:</strong> Re-structured legacy relational models using
-                            <strong>Oracle SQL/PLSQL</strong>, optimizing indexing and partitioning schemes to eliminate
-                            transactional bottlenecks.
-                        </li>
-                        <li><strong>Automated ETL Pipelines:</strong> Architected custom stored procedures and smart
-                            triggers for automated real-time inventory updates and automated business reporting.</li>
-                        <li><strong>Performance Impact:</strong> Accelerated real-time inventory synchronization and dropped transactional bottlenecks by <strong>80%</strong>, dramatically improving operational efficiency and analytical reliability.</li>
-                    </ul>
+                <h3 class="proj-title">Enterprise Inventory System</h3>
+                <p class="proj-desc">Database redesign targeting 1M+ retail transactions with real-time inventory sync.</p>
+                <ul class="proj-bullets">
+                    <li><strong>80% Faster Sync:</strong> Advanced Oracle SQL indexing and partitioning eliminated transactional bottlenecks.</li>
+                    <li><strong>Automated ETL:</strong> Custom stored procedures and triggers for real-time inventory and business reporting.</li>
+                </ul>
+                <div class="proj-stack">
+                    <span>Oracle SQL</span><span>PL/SQL</span><span>ETL</span><span>Database Architecture</span>
                 </div>
-                <div class="project-tech">
-                    <span>Oracle SQL</span>
-                    <span>PL/SQL</span>
-                    <span>ETL</span>
-                    <span>Database Architecture</span>
-                    <span>BI Tools</span>
-                </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fa-solid fa-chart-line project-icon"></i>
-                    <div class="project-links">
-                        <a href="https://github.com/arvindermundra1208/LSTM-Based-Stock-Price-Prediction" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
-                    </div>
+            <article class="proj-card">
+                <span class="proj-num" aria-hidden="true">03</span>
+                <div class="proj-top">
+                    <i class="fa-solid fa-chart-line proj-icon"></i>
+                    <a href="https://github.com/arvindermundra1208/LSTM-Based-Stock-Price-Prediction" target="_blank" class="proj-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <h3 class="project-title">LSTM Stock Price Prediction</h3>
-                <div class="project-details">
-                    <p class="project-description">Deep learning pipeline forecasting AAPL daily closing prices, benchmarking a baseline LSTM against a 5-layer stacked architecture.</p>
-                    <ul class="project-bullets">
-                        <li><strong>Dual Architecture:</strong> Designed and compared Baseline vs 5-layer stacked <strong>LSTM with Dropout</strong>, achieving Test MAE of <strong>$18.44</strong> (vs $24.45 baseline) — a 25% accuracy improvement.</li>
-                        <li><strong>Data Pipeline:</strong> Built a 30-day sliding window sequence pipeline on <strong>4,060+ AAPL trading days</strong> (2010–2026) from Yahoo Finance with MinMax normalization and chronological splits.</li>
-                        <li><strong>Production-Ready:</strong> Applied dropout regularization, validation monitoring, and reproducible training protocols for reliable temporal modeling.</li>
-                    </ul>
+                <h3 class="proj-title">LSTM Stock Prediction</h3>
+                <p class="proj-desc">Deep learning pipeline forecasting AAPL daily closing prices using stacked LSTM architectures.</p>
+                <ul class="proj-bullets">
+                    <li><strong>25% Better MAE:</strong> 5-layer stacked LSTM ($18.44) vs baseline ($24.45) on 4,060+ trading days.</li>
+                    <li>30-day sliding window pipeline with MinMax normalization and chronological splits.</li>
+                </ul>
+                <div class="proj-stack">
+                    <span>Python</span><span>PyTorch</span><span>LSTM</span><span>Pandas</span><span>yfinance</span>
                 </div>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>PyTorch</span>
-                    <span>LSTM</span>
-                    <span>Pandas</span>
-                    <span>Scikit-Learn</span>
-                    <span>yfinance</span>
-                </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fa-solid fa-users project-icon"></i>
-                    <div class="project-links">
-                        <a href="https://github.com/arvindermundra1208/customer-segmentation" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
-                    </div>
+            <article class="proj-card">
+                <span class="proj-num" aria-hidden="true">04</span>
+                <div class="proj-top">
+                    <i class="fa-solid fa-users proj-icon"></i>
+                    <a href="https://github.com/arvindermundra1208/customer-segmentation" target="_blank" class="proj-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <h3 class="project-title">Customer Segmentation Engine</h3>
-                <div class="project-details">
-                    <p class="project-description">End-to-end unsupervised ML pipeline segmenting retail customers using RFM feature engineering and three clustering algorithms.</p>
-                    <ul class="project-bullets">
-                        <li><strong>Feature Engineering:</strong> Constructed <strong>RFM + behavioral features</strong> from UK retail transaction data; applied <strong>PCA</strong> for dimensionality reduction before clustering.</li>
-                        <li><strong>Algorithm Benchmarking:</strong> Implemented and compared <strong>K-Means, Hierarchical Agglomerative, and DBSCAN</strong>; evaluated via Silhouette Score, Davies-Bouldin, and Calinski-Harabasz indices.</li>
-                        <li><strong>Validation:</strong> Confirmed segment robustness via supervised learning; produced <strong>16+ visualizations</strong> documenting the complete analytical pipeline.</li>
-                    </ul>
+                <h3 class="proj-title">Customer Segmentation Engine</h3>
+                <p class="proj-desc">End-to-end unsupervised ML pipeline segmenting retail customers with RFM feature engineering.</p>
+                <ul class="proj-bullets">
+                    <li>Benchmarked <strong>K-Means, HAC &amp; DBSCAN</strong> via Silhouette, Davies-Bouldin, and Calinski-Harabasz metrics.</li>
+                    <li>Validated segments with supervised classifier; produced 16+ visualizations of the full pipeline.</li>
+                </ul>
+                <div class="proj-stack">
+                    <span>Python</span><span>Scikit-Learn</span><span>PCA</span><span>K-Means</span><span>Seaborn</span>
                 </div>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Scikit-Learn</span>
-                    <span>K-Means</span>
-                    <span>PCA</span>
-                    <span>Seaborn</span>
-                    <span>SciPy</span>
-                </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fa-solid fa-comment-dots project-icon"></i>
-                    <div class="project-links">
-                        <a href="https://github.com/arvindermundra1208/yelp-sentiment-analysis" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
-                    </div>
+            <article class="proj-card">
+                <span class="proj-num" aria-hidden="true">05</span>
+                <div class="proj-top">
+                    <i class="fa-solid fa-comment-dots proj-icon"></i>
+                    <a href="https://github.com/arvindermundra1208/yelp-sentiment-analysis" target="_blank" class="proj-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <h3 class="project-title">Yelp Review Sentiment Classifier</h3>
-                <div class="project-details">
-                    <p class="project-description">NLP deep learning system predicting Yelp review star ratings from text, benchmarking BiLSTM against a CNN-BiLSTM hybrid architecture.</p>
-                    <ul class="project-bullets">
-                        <li><strong>Dual Model Design:</strong> Built and compared <strong>BiLSTM vs CNN-BiLSTM hybrid</strong> for 5-class rating prediction on the Yelp Full Review Dataset (Hugging Face).</li>
-                        <li><strong>Optimization:</strong> Applied <strong>Optuna</strong> hyperparameter tuning and <strong>SpaCy</strong> tokenization; trained checkpoints shipped with the repo for reproducibility.</li>
-                        <li><strong>Full-Stack Deployment:</strong> Developed an interactive <strong>web interface</strong> (HTML/CSS/JS) for live model inference with confusion matrix visualization.</li>
-                    </ul>
+                <h3 class="proj-title">Yelp Sentiment Classifier</h3>
+                <p class="proj-desc">NLP system predicting Yelp star ratings from text — BiLSTM vs CNN-BiLSTM architectures.</p>
+                <ul class="proj-bullets">
+                    <li>Trained on Hugging Face Yelp Full dataset; pre-trained checkpoints shipped with repo.</li>
+                    <li><strong>Optuna</strong> hyperparameter tuning, SpaCy tokenization, and a browser-based inference UI.</li>
+                </ul>
+                <div class="proj-stack">
+                    <span>Python</span><span>PyTorch</span><span>BiLSTM</span><span>CNN</span><span>Optuna</span><span>SpaCy</span>
                 </div>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>PyTorch</span>
-                    <span>BiLSTM</span>
-                    <span>CNN</span>
-                    <span>NLP</span>
-                    <span>Optuna</span>
-                    <span>HuggingFace</span>
-                </div>
-            </div>
+            </article>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Leadership Section -->
-    <section id="leadership" class="about fade-in">
-        <div class="container">
-            <h2 class="section-title">Leadership & Activities</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Event Coordinator, CSR</h3>
-                        <p class="timeline-subtitle">Dun & Bradstreet</p>
-                        <div class="timeline-body">
-                            <p>Organized essential community support initiatives including a School Bag Donation Drive
-                                (110+ bags), Wall Painting projects (10 murals), and environmental volunteering (Tree
-                                plantation with 150+ saplings). Effectively managed logistics and teams of over 60+
-                                volunteers.</p>
-                        </div>
-                    </div>
+<!-- ── Skills ────────────────────────────────────── -->
+<section id="skills" class="section section-alt" data-animate>
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-row">
+                <span class="skill-cat"><i class="fa-solid fa-code"></i>Languages</span>
+                <div class="skill-tags">
+                    <span>Java</span><span>Python</span><span>SQL</span><span>C++</span>
+                    <span>JavaScript</span><span>TypeScript</span><span>Shell</span><span>R</span>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Cognitive Applications Workshop Mentor</h3>
-                        <p class="timeline-subtitle">TechAnalogy</p>
-                        <div class="timeline-body">
-                            <p>Delivered a comprehensive 14-day technical workshop on applied ML/AI. Guided over 400
-                                participants through live instruction, hands-on projects, and technical assistance,
-                                translating theoretical frameworks into deployed cognitive solutions.</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="skill-row">
+                <span class="skill-cat"><i class="fa-solid fa-layer-group"></i>Frameworks</span>
+                <div class="skill-tags">
+                    <span>Spring Boot</span><span>Hibernate</span><span>Angular</span><span>React</span>
+                    <span>Node.js</span><span>gRPC</span><span>REST APIs</span>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Academic Research Publication</h3>
-                        <p class="timeline-subtitle">ICIOT 2023</p>
-                        <div class="timeline-body">
-                            <p>Co-authored and presented research on "Classification of Carotid Artery Intima-Media
-                                Thickness Ultrasound Images Using Deep Learning", contributing to the global dialogue on
-                                automated medical imagery diagnostics.</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="skill-row">
+                <span class="skill-cat"><i class="fa-solid fa-sitemap"></i>Systems</span>
+                <div class="skill-tags">
+                    <span>Microservices</span><span>Distributed Systems</span><span>System Design</span>
+                    <span>Concurrency</span><span>Scalability</span><span>Caching</span><span>Load Balancing</span>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Committee Member, Social Services</h3>
-                        <p class="timeline-subtitle">Aaruush, SRM University</p>
-                        <div class="timeline-body">
-                            <p>Actively contributed towards organizing large-scale social welfare projects during the
-                                university's technical festival.</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="skill-row">
+                <span class="skill-cat"><i class="fa-solid fa-screwdriver-wrench"></i>DevOps</span>
+                <div class="skill-tags">
+                    <span>Docker</span><span>Kubernetes</span><span>Jenkins</span>
+                    <span>GitHub</span><span>Linux/Unix</span><span>SLI/SLO</span>
+                </div>
+            </div>
+            <div class="skill-row">
+                <span class="skill-cat"><i class="fa-solid fa-cloud"></i>Cloud &amp; DB</span>
+                <div class="skill-tags">
+                    <span>GCP</span><span>AWS</span><span>Azure</span><span>MySQL</span>
+                    <span>PostgreSQL</span><span>MS SQL Server</span><span>MongoDB</span><span>Redis</span>
+                </div>
+            </div>
+            <div class="skill-row">
+                <span class="skill-cat"><i class="fa-solid fa-brain"></i>ML &amp; Data</span>
+                <div class="skill-tags">
+                    <span>PyTorch</span><span>TensorFlow</span><span>Scikit-Learn</span>
+                    <span>NumPy</span><span>Pandas</span><span>ETL</span><span>Statistical Modeling</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact & Footer Section -->
-    <section id="contact" class="contact fade-in">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <p class="contact-desc">
-                    I am actively seeking <strong>Summer and Fall 2026 Internship</strong> opportunities in
-                    <strong>Software Engineering</strong>,
-                    <strong>Full-Stack Development</strong>, and <strong>Data Science</strong>. I am eager to apply my
-                    expertise in scalable architectures
-                    and intelligent systems to real-world challenges while continuing to learn and grow in a high-impact
-                    environment.
+<!-- ── Education ─────────────────────────────────── -->
+<section id="education" class="section" data-animate>
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-list">
+            <div class="edu-card">
+                <div class="edu-head">
+                    <div>
+                        <h3 class="edu-degree">MS, Data Science</h3>
+                        <p class="edu-school">Texas A&amp;M University &mdash; College Station, TX</p>
+                    </div>
+                    <div class="edu-meta">
+                        <span class="edu-date">Aug 2025 — Dec 2026</span>
+                        <span class="edu-gpa">GPA 4.0 / 4.0</span>
+                    </div>
+                </div>
+                <p class="edu-note">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Co-authored research published at <strong>ICIOT 2023</strong> — "Classification of Carotid Artery IMT Ultrasound Images Using Deep Learning."
                 </p>
-                <div class="contact-info">
-                    <a href="mailto:arvinder.mundra@tamu.edu" class="contact-item" aria-label="Email Address">
-                        <i class="fa-solid fa-envelope fa-xl"></i>
-                        <span>arvinder.mundra@tamu.edu</span>
-                    </a>
-                    <a href="tel:+14699014011" class="contact-item" aria-label="Phone Number">
-                        <i class="fa-solid fa-phone fa-xl"></i>
-                        <span>+1 (469) 901-4011</span>
-                    </a>
+            </div>
+
+            <div class="edu-card">
+                <div class="edu-head">
+                    <div>
+                        <h3 class="edu-degree">B.Tech, Electronics &amp; Computer Engineering</h3>
+                        <p class="edu-school">SRM Institute of Science and Technology &mdash; Chennai, India</p>
+                    </div>
+                    <div class="edu-meta">
+                        <span class="edu-date">Jun 2019 — May 2023</span>
+                        <span class="edu-gpa">GPA 3.7 / 4.0</span>
+                    </div>
                 </div>
-                <a href="mailto:arvinder.mundra@tamu.edu" class="btn btn-primary">Get In Touch</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/arvinder-mundraa" target="_blank" aria-label="LinkedIn"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/arvindermundra" target="_blank" aria-label="GitHub"><i
-                        class="fa-brands fa-github"></i></a>
-            </div>
-            <p class="copyright">&copy; 2026 Arvinder Mundra. Designed & Built for Performance.</p>
+<!-- ── Contact ───────────────────────────────────── -->
+<section id="contact" class="section section-alt contact" data-animate>
+    <div class="container contact-inner">
+        <p class="contact-tag">Let's work together</p>
+        <h2 class="contact-title">Open to new<br><span class="grad">opportunities.</span></h2>
+        <p class="contact-sub">Actively seeking Summer &amp; Fall 2026 internships and full-time roles in Software Engineering, Full-Stack Development, and Data Science.</p>
+        <div class="contact-links">
+            <a href="mailto:arvinder.mundra@tamu.edu" class="contact-link">
+                <i class="fa-solid fa-envelope"></i>
+                arvinder.mundra@tamu.edu
+            </a>
+            <a href="tel:+14699014011" class="contact-link">
+                <i class="fa-solid fa-phone"></i>
+                +1 (469) 901-4011
+            </a>
         </div>
-    </footer>
+        <a href="mailto:arvinder.mundra@tamu.edu" class="btn-primary">
+            Say Hello <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
 
-    <!-- Scroll to Top -->
-    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- ── Footer ────────────────────────────────────── -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/arvinder-mundraa" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/arvindermundra1208" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Arvinder Mundra</p>
+    </div>
+</footer>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+<button class="scroll-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
 </body>
-
 </html>
